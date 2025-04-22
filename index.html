@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Exemplo</title>
+    <title>Formulário de Exemplo com Upload de Arquivo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,12 +25,7 @@
         .form-container h2 {
             margin-bottom: 20px;
         }
-       -group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
+                   margin-bottom: 5px;
         }
         .form-group input, .form-group textarea {
             width: 100%;
@@ -73,6 +68,10 @@
             <div class="form-group">
                 <label for="comments">Comentários:</label>
                 <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload de Arquivo:</label>
+                <input type="file" id="file" name="file" required>
             </div>
             <div class="form-group">
                 <button type="submit">Enviar</button>
